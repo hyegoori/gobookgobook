@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src = "/js/join.js"></script>
+</head>
+<body>
+<h1>회원가입</h1>
+<div id="container">
+    <form action="/joinfunc" method="post">
+        <fieldset>
+            <legend>회원 정보</legend>
+            <ul id="shipping">
+                <li>
+                    <label for="user-name">이름 </label>
+                    <input type="text" id="user-name" name="name">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="text" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="user-id">아이디</label>
+                    <input type="text" id="user-id" name="id">
+                </li>
+                <li>
+                    <lable for="user-password">비밀번호</lable>
+                    <input type="password" id="user-password" name="pwd">
+                </li>
+                <li>
+                    <lable for="user-password-">비밀번호 확인</lable>
+                    <input type="password" id="user-password-" name="pwdChk">
+                </li>
+
+            </ul>
+        </fieldset>
+        <div>
+
+            <input type="submit" onclick="return validateForm()" value="확인">
+
+            <input type="reset" value="전체 지우기">
+        </div>
+    </form>
+</div>
+</body>
+</html>
